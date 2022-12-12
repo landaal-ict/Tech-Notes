@@ -1,6 +1,6 @@
 ### Create admin user
 
-docker-compose -f docker-compose-ce.yaml exec passbolt su -m -c "/usr/share/php/passbolt/bin/cake \
+docker-compose exec passbolt su -m -c "/usr/share/php/passbolt/bin/cake \
                                 passbolt register_user \
                                 -u <your_email> \
                                 -f <first_name> \
@@ -10,6 +10,8 @@ docker-compose -f docker-compose-ce.yaml exec passbolt su -m -c "/usr/share/php/
 ### Backup options
 
 Backup database container
+change database-container to the name of your passbolt database container
+and change the backup location
 
    ```
 docker exec -i database-container bash -c \
@@ -18,6 +20,8 @@ docker exec -i database-container bash -c \
 ```
 
 ### Backup server public and private keys
+change passbolt-container to the name of your passbolt container
+and change the backup location
 
    ```
 docker cp passbolt-container:/etc/passbolt/gpg/serverkey_private.asc \
