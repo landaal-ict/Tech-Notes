@@ -1,3 +1,5 @@
+## Passbolt
+
 ### Create admin user
 
 docker-compose exec passbolt su -m -c "/usr/share/php/passbolt/bin/cake \
