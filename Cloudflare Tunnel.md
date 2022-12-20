@@ -1,7 +1,14 @@
 ## Cloudflare Tunnel
+##### Protect your web servers from direct attack
 
+From the moment an application is deployed, developers and IT spend time locking it down — configuring ACLs, rotating IP addresses, and using clunky solutions like GRE tunnels.
 
-I do everthing in the cli
+There’s a simpler and more secure way to protect your applications and web servers from direct attacks: Cloudflare Tunnel.
+
+Ensure your server is safe, no matter where it’s running: public cloud, private cloud, Kubernetes cluster, or even a Mac mini under your TV.
+
+### I do everthing in the cli
+
 
 Lets install the cloudflare tunnel service.
 in my case i will do the install on een ubuntu machine.
