@@ -39,3 +39,9 @@ voeg een file genaamd CNAME toe aan je github.io project.
 zet daar in je domeinnaam. 
 bijvoorbeeld: example.com
 ```
+
+## line endings voor windows.
+
+```
+git config --global core.autocrlf input
+```
