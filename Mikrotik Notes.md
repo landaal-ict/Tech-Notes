@@ -59,3 +59,12 @@ add action=accept chain=forward comment="allow port forwarding" connection-nat-s
 add action=drop chain=forward  
 /ip firewall nat  
 add action=masquerade chain=srcnat comment="defconf: masquerade" out-interface-list=WAN
+
+
+## Zerotier
+
+/ip firewall filter
+add action=accept chain=input comment=zerotier in-interface=zerotier1
+
+/ip firewall nat
+add action=accept chain=srcnat comment=ZT dst-address=10.0.0.0/24 src-address=10.0.4.0/24
